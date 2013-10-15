@@ -166,7 +166,7 @@ void SampleApp_Init( uint8 task_id )
   // Setup for the flash command's destination address - Group 1
   SampleApp_Flash_DstAddr.addrMode = (afAddrMode_t)Addr16Bit;
   SampleApp_Flash_DstAddr.endPoint = SAMPLEAPP_ENDPOINT;
-  SampleApp_Flash_DstAddr.addr.shortAddr = 0xFFFF;  //¼s¼½
+  SampleApp_Flash_DstAddr.addr.shortAddr = 0xFFFF;  //ï¿½sï¿½ï¿½
   //end device
   /*
   coordinator to end device must 0xffff
@@ -399,7 +399,7 @@ void SampleApp_MessageMSGCB( afIncomingMSGPacket_t *pkt )
       break;
     case SAMPLEAPP_FLASH_CLUSTERID:
  //if coordinator  
-      HalUARTWrite(SERIAL_APP_PORT, pkt->cmd.Data, pkt->cmd.DataLength); //¦pªG¦¬¨ì«Ê¥]¡A°e¤°»òªF¦èµ¹console¥hÅã¥Ü
+      HalUARTWrite(SERIAL_APP_PORT, pkt->cmd.Data, pkt->cmd.DataLength); //ï¿½pï¿½Gï¿½ï¿½ï¿½ï¿½ï¿½Ê¥]ï¿½Aï¿½eï¿½ï¿½ï¿½ï¿½ï¿½Fï¿½èµ¹consoleï¿½hï¿½ï¿½ï¿½ï¿½
       break;  
   }
 }
