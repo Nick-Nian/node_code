@@ -1,0 +1,6 @@
+LN light on
+LF light off
+C001N node001 light on
+C001F node001 light off
+
+SR1~SR9
